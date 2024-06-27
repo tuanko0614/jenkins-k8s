@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: nginx
@@ -16,11 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-<<<<<<< HEAD
         image: tuandt0614/local-jenkins:latest
-=======
-        image: nginx:latest
->>>>>>> 7e68feb01e19c5941f725f766884140040a66075
         ports:
         - containerPort: 80
 ---
